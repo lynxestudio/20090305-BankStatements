@@ -8,25 +8,26 @@ Como un sencillo ejemplo de la utilización de permisos mediante CAS se puede de
 
 La solución de ejemplo se muestra más o menos así:
 
-<img src="fig0.png"/>
 
 Fig 1. Solución para desmostrar uso de código seguro en C#.
 
-<img src="fig1.png"/>
+<img src="fig0.png"/>
 
 La operación de la aplicación consiste que cuando el usuario presione el botón de generar, se generaría un archivo XML en una carpeta restringida solamente para la aplicacion si se trata de escribir en otra ubicación que no sea la predeterminada .
 
 Fig 2. La aplicación de ejemplo.
 
-<img src="fig2.png"/>
+<img src="fig1.png"/>
 
 Fig 3. La aplicación generando archivos utilizando la ubicación permitida.
 
-<img src="fig3.png"/>
+<img src="fig2.png"/>
 
 La aplicación se ejecuta sin ningún problema hasta que se trate de generar los archivos en una ubicación que no es la ruta predeterminada indicada por por la aplicacion, hasta aqui el sistema operativo no indica ninguna excepción en las bitácoras de seguridad, pero debido a los permisos del CAS que no permiten que la biblioteca escriba en otra ubicación que no sea la indicada en su clase FileIOPermissionAttribute la aplicación no escribirá ningún archivo y lanzará una excepcion del tipo SecurityException.
 
 Fig 3. Configuramos la aplicación para escribir en otra ubicación que no es la permitida.
+
+<img src="fig3.png">
 
 Fig 4. Lanza una excepción si se intenta escribir en otra ubicación.
 
