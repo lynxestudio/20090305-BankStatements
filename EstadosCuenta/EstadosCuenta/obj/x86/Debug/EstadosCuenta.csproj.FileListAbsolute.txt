@@ -1,0 +1,11 @@
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\obj\x86\Debug\Godel.Posts.EstadosCuenta.resources
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\obj\x86\Debug\EstadosCuenta.Properties.Resources.resources
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\bin\Debug\EstadosCuenta.exe
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\bin\Debug\EstadosCuenta.pdb
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\bin\Debug\EstadosCuenta.Biblioteca.dll
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\bin\Debug\EstadosCuenta.Biblioteca.pdb
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\obj\x86\Debug\EstadosCuenta.exe
+C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta\obj\x86\Debug\EstadosCuenta.pdb
