@@ -30,19 +30,22 @@ Fig 3. La aplicación generando archivos utilizando la ubicación permitida.
 <div align="center">
 <img src="fig2.png"/>
 </div>
+<p align="justify">
 La aplicación se ejecuta sin ningún problema hasta que se trate de generar los archivos en una ubicación que no es la ruta predeterminada indicada por por la aplicacion, hasta aqui el sistema operativo no indica ninguna excepción en las bitácoras de seguridad, pero debido a los permisos del CAS que no permiten que la biblioteca escriba en otra ubicación que no sea la indicada en su clase <b>FileIOPermissionAttribute</b> la aplicación no escribirá ningún archivo y lanzará una excepcion del tipo <b>SecurityException</b>.
-
+</p>
 Fig 3. Configuramos la aplicación para escribir en otra ubicación que no es la permitida.
-
+<div align="center">
 <img src="fig3.png">
-
+</div>
 Fig 4. Lanza una excepción si se intenta escribir en otra ubicación.
-
+<div align="center">
 <img src="fig4.png"/>
-
+</div>
+<p align="justify">
 Si revisamos el código de la biblioteca proyecto [EstadosCuenta.biblioteca] observamos que el método esta implementado para generar exclusivamente los archivos bajo una carpeta llamada [Movimientos] en la partición [C:\\] y que la protección del ensamblado no dependerá de las validaciones que implementemos en la capa de presentación sino en el ensamblado mismo, por eso al invocar el método y pasarle cómo parámetro una ruta que no sea la predeterminada, este ensamblado solo escribirá en donde se le haya indicado internamente en el código.
+</p>
+<h4>¿Cómo podemos evitar que el código de un ensamblado realice operaciones para las que no fue diseñado?</h4>
 
-<p>¿Cómo podemos evitar que el código de un ensamblado realice operaciones para las que no fue diseñado?</p>
 <p align="justify">
 La respuesta sin duda alguna es uno de los objetivos del CAS. Usando CAS podemos evitar que un usuario o un proceso autenticado utilice los métodos del ensamblado para realizar acciones que no están consideradas en la lógica del programa. Para lograr ese objetivo CAS utiliza permisos encapsulados como objetos que pueden ser usados a nivel de métodos o ensamblados, estos permisos pueden ser de manera declarativa usados atributos dentro del código, en este ejemplo utilizamos un permiso de forma declarativa para el método que genera los estados de cuenta.
 </p>
