@@ -1,5 +1,0 @@
-C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta.biblioteca\bin\Debug\EstadosCuenta.biblioteca.dll
-C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta.biblioteca\bin\Debug\EstadosCuenta.biblioteca.pdb
-C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta.biblioteca\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta.biblioteca\obj\Debug\EstadosCuenta.biblioteca.dll
-C:\Documents and Settings\Martin\my documents\visual studio 2010\Projects\EstadosCuenta\EstadosCuenta.biblioteca\obj\Debug\EstadosCuenta.biblioteca.pdb

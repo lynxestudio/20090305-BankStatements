@@ -17,29 +17,29 @@ La solución de ejemplo se muestra más o menos así:
 
 Fig 1. Solución para desmostrar uso de código seguro en C#.
 <div align="center">
-<img src="fig0.png"/>
+<img src="images/fig0.png"/>
 </div>
 <p align="justify">
 La operación de la aplicación consiste que cuando el usuario presione el botón de generar, se generaría un archivo XML en una carpeta restringida solamente para la aplicacion si se trata de escribir en otra ubicación que no sea la predeterminada .
 </p>
 Fig 2. La aplicación de ejemplo.
 <div align="center">
-<img src="fig1.png"/>
+<img src="images/fig1.png"/>
 </div>
 Fig 3. La aplicación generando archivos utilizando la ubicación permitida.
 <div align="center">
-<img src="fig2.png"/>
+<img src="images/fig2.png"/>
 </div>
 <p align="justify">
 La aplicación se ejecuta sin ningún problema hasta que se trate de generar los archivos en una ubicación que no es la ruta predeterminada indicada por por la aplicacion, hasta aqui el sistema operativo no indica ninguna excepción en las bitácoras de seguridad, pero debido a los permisos del CAS que no permiten que la biblioteca escriba en otra ubicación que no sea la indicada en su clase <b>FileIOPermissionAttribute</b> la aplicación no escribirá ningún archivo y lanzará una excepcion del tipo <b>SecurityException</b>.
 </p>
 Fig 3. Configuramos la aplicación para escribir en otra ubicación que no es la permitida.
 <div align="center">
-<img src="fig3.png">
+<img src="images/fig3.png">
 </div>
 Fig 4. Lanza una excepción si se intenta escribir en otra ubicación.
 <div align="center">
-<img src="fig4.png"/>
+<img src="images/fig4.png"/>
 </div>
 <p align="justify">
 Si revisamos el código de la biblioteca proyecto [EstadosCuenta.biblioteca] observamos que el método esta implementado para generar exclusivamente los archivos bajo una carpeta llamada [Movimientos] en la partición [C:\\] y que la protección del ensamblado no dependerá de las validaciones que implementemos en la capa de presentación sino en el ensamblado mismo, por eso al invocar el método y pasarle cómo parámetro una ruta que no sea la predeterminada, este ensamblado solo escribirá en donde se le haya indicado internamente en el código.
